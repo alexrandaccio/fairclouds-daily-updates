@@ -8,6 +8,7 @@ export default {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
+					"Authorization": `Bearer ${env.API_SECRET_KEY}`,
 				},
 				body: JSON.stringify({}),
 			});
